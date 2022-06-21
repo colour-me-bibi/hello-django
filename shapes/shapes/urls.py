@@ -20,10 +20,12 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    
     path('rectangle/area/', views.rectangle_area_params),
     path('rectangle/perimeter/', views.rectangle_perimeter_params),
     path('circle/area/', views.circle_area_params),
     path('circle/perimeter/', views.circle_perimeter_params),
+
     path('rectangle/area/<int:height>/<int:width>', views.rectangle_area),
     path('rectangle/perimeter/<int:height>/<int:width>', views.rectangle_perimeter),
     path('circle/area/<int:radius>', views.circle_area),
